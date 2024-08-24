@@ -12,7 +12,15 @@ function Header() {
     return (
         <header className='bg-primary container z-40 h-16 md:h-24 text-lg flex items-center justify-between flex-row'>
             <div>© Code by vidit</div>
-            <div className='relative z-40'>
+            <div className='md:block hidden'>
+                <div className='gap-4 flex flex-row '>
+                    <a href="#" onClick={toggleMenu}>Work</a>
+                    <a href="#" onClick={toggleMenu}>About</a>
+                    <a href="#" onClick={toggleMenu}>Contact</a>
+                </div>
+            </div>
+
+            <div className='relative z-40 md:hidden'>
                 <button onClick={toggleMenu} className='block md:hidden z-50'>
                     <p>Menu</p>
                 </button>
@@ -22,14 +30,12 @@ function Header() {
                     <button onClick={toggleMenu} className='z-50 w-full flex justify-end'>
                         <X size={16} color='white' className='z-50 bg-[#445CE8] p-4 h-16 w-16 rounded-full' />
                     </button>
-                    <p className='border-b font-thin text-xs pt-6 pb-2 -mt-40'>NAVIGATION</p>
-                    <div className='flex flex-col gap-6 -mt-40'>
+                    <p className='border-b font-thin text-xs pt-6 pb-2 -mt-80'>NAVIGATION</p>
+                    <div className='flex flex-col gap-6 -mt-80'>
                         <a href="#" className='text-5xl' onClick={toggleMenu}>Home</a>
                         <a href="#" className='text-5xl' onClick={toggleMenu}>Work</a>
                         <a href="#" className='text-5xl' onClick={toggleMenu}>About</a>
                         <a href="#" className='text-5xl' onClick={toggleMenu}>Contact</a>
-                    </div>
-                    <div>
                     </div>
                     <div className='border-t flex flex-row gap-4 px-2'>
                         <a className='font-light' href="">Instagram</a>
