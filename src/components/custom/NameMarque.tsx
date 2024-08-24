@@ -5,7 +5,7 @@ const NameMarquee = ({
     items,
     direction = 'left',
     speed = 'fast',
-    pauseOnHover = true,
+    // pauseOnHover = true,
     className,
 }: {
     items: {

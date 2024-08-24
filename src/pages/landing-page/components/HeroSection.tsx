@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { HeroImage } from '@/assets/images'
 import NameMarquee from '@/components/custom/NameMarque'
 import { ArrowDownRight, Globe } from 'lucide-react'
